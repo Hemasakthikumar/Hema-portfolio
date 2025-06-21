@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hema Varshitha S | Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #2c3e50;
+    }
+    header {
+      background: linear-gradient(135deg, #8e44ad, #3498db);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #8e44ad;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #3498db;
+      margin-top: 0.3rem;
+    }
+    .project {
+      background: #fdf9ff;
+      border-left: 5px solid #8e44ad;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    .contact-form label {
+      font-weight: bold;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      background: #8e44ad;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+    .contact-form button:hover {
+      background: #732d91;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hema Varshitha S</h1>
+    <p>Creative Web Developer | CSE Student | Passionate Tech Enthusiast</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hey there! I'm Hema, a final-year Computer Science student with a drive to build user-centric, visually stunning websites. I thrive on transforming ideas into elegant, functional digital experiences. With a mix of design sensibility and coding proficiency, I’m ready to make an impact in the tech world.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>💧 SMART Drainage System</h3>
+      <p>Developed a smart solution for drainage monitoring, detecting blockages and automating issue alerts — recognized in Smart India Hackathon.</p>
+    </div>
+    <div class="project">
+      <h3>🛍️ Responsive eCommerce Website</h3>
+      <p>Designed and developed a responsive eCommerce website to showcase and sell natural hair care products with an integrated ordering system.</p>
+    </div>
+    <div class="project">
+      <h3>⚛️ React Weather App</h3>
+      <p>Built a dynamic React-based weather application that fetches real-time weather data using APIs and displays it with clean UI components.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> HTML, CSS, JavaScript, Java (Basic), MySQL</li>
+      <li><strong>Frameworks:</strong> Flask, React (Basics)</li>
+      <li><strong>Tools:</strong> Git, Figma, VS Code</li>
+    </ul>
+  </section>
+
+  <section id="extracurricular">
+    <h2>Extracurricular Activities</h2>
+    <ul>
+      <li>Hosted a flash mob event at Dr. NGP Institute of Technology during the Kanam intercollege cultural fest.</li>
+      <li>Anchored guest lectures, technical symposiums, and cultural programs at college events.</li>
+      <li>Won first prize in the Poo Kolam competition during Onam celebrations.</li>
+      <li>Designed posters and edited promotional videos for various campus events and fests.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📬 Let's collaborate or just say hello! I'm always open to exciting opportunities and new ideas.</p>
+    <form class="contact-form" method="POST" action="/send-message">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
